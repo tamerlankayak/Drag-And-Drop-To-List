@@ -5,6 +5,8 @@ import androidx.compose.animation.slideInHorizontally
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
@@ -128,13 +130,18 @@ fun MainScreen(
                     modifier = Modifier.fillMaxWidth(),
                     textAlign = TextAlign.Start
                 )
-                mainViewModel.addedPersons.forEach { person ->
-                    Text(
-                        text = person.name,
-                        color = Color.White,
-                        style = MaterialTheme.typography.h6,
-                        fontWeight = FontWeight.Bold
-                    )
+                LazyColumn(
+                    modifier = Modifier
+                        .fillMaxSize()
+                ) {
+                    items(mainViewModel.addedPersons) { person ->
+                        Text(
+                            text = person.name,
+                            color = Color.White,
+                            style = MaterialTheme.typography.h6,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
                 }
             }
         }
