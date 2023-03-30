@@ -17,7 +17,7 @@ class MainViewModel : ViewModel() {
 
     var addedPersons = mutableStateListOf<PersonUiItem>()
         private set
-
+//you can add many items
     init {
         items = listOf(
             PersonUiItem("Tamerlan", "1", Color.Gray),
