@@ -4,7 +4,7 @@ Dragging box and dropping to specific area for insert to list.
 
 Items is ready for insert to the list when long clicking.
 
-Boxes  can change to different shapes
+Boxes  can change to different shapes 
 
 All codes is customizable
 
