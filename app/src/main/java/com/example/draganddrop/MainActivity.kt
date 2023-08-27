@@ -26,6 +26,7 @@ class MainActivity : ComponentActivity() {
                         .fillMaxSize()
                         .background(Color.Black.copy(0.8f))
                 ) {
+                    //using 
                     MainScreen(mainViewModel = mainViewModel)
                 }
             }
