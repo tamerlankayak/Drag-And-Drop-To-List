@@ -18,6 +18,7 @@ class MainActivity : ComponentActivity() {
     private val mainViewModel = MainViewModel()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
         setContent {
             DragAndDropTheme {
                 DraggableScreen(
